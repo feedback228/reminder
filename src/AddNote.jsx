@@ -80,18 +80,13 @@ export const AddNote = () => {
     localStorage.setItem("notes", JSON.stringify(updatedNotes));
   };
 
-  const editNote = (index, newTitle, newDescription, newDateTimestamp) => {
+  const editNote = (index, title, description, dateTime) => {
     const updatedNotes = notes.map((note, i) =>
       i === index
-        ? {
-            ...note,
-            title: newTitle,
-            description: newDescription,
-            dateTime: newDateTimestamp,
-          }
+        ? { ...note, title, description, dateTime }
         : note
     );
-    setNotes([...updatedNotes]);
+    setNotes(updatedNotes);
     localStorage.setItem("notes", JSON.stringify(updatedNotes));
   };
 
