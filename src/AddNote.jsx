@@ -6,7 +6,7 @@ import { ReminderList } from "./ReminderList";
 
 import "./AddNote.scss";
 
-const AddNote = () => {
+export const AddNote = () => {
   const [notes, setNotes] = useState([]);
   const [newTitle, setNewTitle] = useState("");
   const [newDescription, setNewDescription] = useState("");
@@ -180,4 +180,4 @@ const AddNote = () => {
   );
 };
 
-export default AddNote;
+
