@@ -147,6 +147,7 @@ export const AddNote = () => {
   return (
     <div className="add-note">
       <div className="add">
+        <h1>Добавить напоминалку</h1>
         <AddNoteForm
           newTitle={newTitle}
           newDescription={newDescription}
