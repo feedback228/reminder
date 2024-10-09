@@ -1,4 +1,3 @@
-// AddNoteForm.jsx
 import React from "react";
 
 export const AddNoteForm = ({
@@ -13,24 +12,24 @@ export const AddNoteForm = ({
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      addNote(); // Вызов функции добавления заметки
+      addNote(); 
     }}>
       <input
         type="text"
         placeholder="Заголовок"
         value={newTitle}
-        onChange={handleTitleChange} // Обработчик изменения заголовка
+        onChange={handleTitleChange} 
       />
       <input
         type="text"
         placeholder="Описание"
         value={newDescription}
-        onChange={handleDescriptionChange} // Обработчик изменения описания
+        onChange={handleDescriptionChange} 
       />
       <input
         type="datetime-local"
         value={newDateTime}
-        onChange={handleDateChange} // Обработчик изменения даты и времени
+        onChange={handleDateChange} 
       />
       <button type="submit">Добавить заметку</button>
     </form>
